@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You 💐</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #ffe4ec, #fff);
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: #444;
+  }
+
+  .bouquet {
+    position: relative;
+    width: 320px;
+    height: 500px;
+    margin: 30px auto;
+  }
+
+  .flower {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .flower:hover {
+    transform: scale(1.15);
+  }
+
+  .petal {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .center {
+    width: 25px;
+    height: 25px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+  }
+
+  .stem {
+    width: 4px;
+    height: 90px;
+    background: green;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+
+  .wrap {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-top: 180px solid #ffb6c1;
+    z-index: -1;
+  }
+
+  #message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    min-height: 40px;
+    padding: 0 20px;
+  }
+
+  iframe {
+    display: none;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>💐 For You Tharunika</h1>
+
+<!-- 🎶 Background Music -->
+<iframe 
+  src="https://www.youtube.com/embed/9p2dW8v1y1g?autoplay=1&loop=1&playlist=9p2dW8v1y1g">
+</iframe>
+
+<div class="bouquet">
+
+  <!-- Flowers with YOUR messages -->
+
+  <div class="flower" style="top:10px; left:130px;" onclick="showMessage('I’m always here 💖')">
+    <div class="petal" style="top:0; left:20px; background:#ff69b4;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ff69b4;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ff69b4;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ff69b4;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:60px; left:60px;" onclick="showMessage('I’m the one for you 💕')">
+    <div class="petal" style="top:0; left:20px; background:#ffb6c1;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ffb6c1;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ffb6c1;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ffb6c1;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:60px; left:200px;" onclick="showMessage('I would never give up 🌹')">
+    <div class="petal" style="top:0; left:20px; background:#ff4d6d;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ff4d6d;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ff4d6d;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ff4d6d;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:120px; left:130px;" onclick="showMessage('I love you so much ❤️')">
+    <div class="petal" style="top:0; left:20px; background:#ff0000;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ff0000;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ff0000;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ff0000;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:160px; left:60px;" onclick="showMessage('My azhagi 💫')">
+    <div class="petal" style="top:0; left:20px; background:#dda0dd;"></div>
+    <div class="petal" style="top:20px; left:0; background:#dda0dd;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#dda0dd;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#dda0dd;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:160px; left:200px;" onclick="showMessage('Tharunika I wanna keep seeing that smile on your face 😊')">
+    <div class="petal" style="top:0; left:20px; background:#ffd700;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ffd700;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ffd700;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ffd700;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:210px; left:130px;" onclick="showMessage('I will marry you 💍')">
+    <div class="petal" style="top:0; left:20px; background:#87cefa;"></div>
+    <div class="petal" style="top:20px; left:0; background:#87cefa;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#87cefa;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#87cefa;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:260px; left:80px;" onclick="showMessage('I won’t give up in any circumstances 💪')">
+    <div class="petal" style="top:0; left:20px; background:#98fb98;"></div>
+    <div class="petal" style="top:20px; left:0; background:#98fb98;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#98fb98;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#98fb98;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:260px; left:180px;" onclick="showMessage('I would be here for you always 💖')">
+    <div class="petal" style="top:0; left:20px; background:#ff9aa2;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ff9aa2;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ff9aa2;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ff9aa2;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:310px; left:130px;" onclick="showMessage('I’m gonna be the place where you feel happiest 🌸')">
+    <div class="petal" style="top:0; left:20px; background:#f08080;"></div>
+    <div class="petal" style="top:20px; left:0; background:#f08080;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#f08080;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#f08080;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:360px; left:130px;" onclick="showMessage('I am your comfort zone that melts your heart 💕')">
+    <div class="petal" style="top:0; left:20px; background:#ff85a2;"></div>
+    <div class="petal" style="top:20px; left:0; background:#ff85a2;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#ff85a2;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#ff85a2;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="flower" style="top:410px; left:130px;" onclick="showMessage('I will always do my best 💯')">
+    <div class="petal" style="top:0; left:20px; background:#cdb4db;"></div>
+    <div class="petal" style="top:20px; left:0; background:#cdb4db;"></div>
+    <div class="petal" style="top:20px; left:40px; background:#cdb4db;"></div>
+    <div class="petal" style="top:40px; left:20px; background:#cdb4db;"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <div class="wrap"></div>
+
+</div>
+
+<div id="message"></div>
+
+<script>
+function showMessage(text) {
+  document.getElementById("message").innerText = text;
+}
+</script>
+
+</body>
+</html>
